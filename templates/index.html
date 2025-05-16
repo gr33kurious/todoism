@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo App</title>
+    <style>
+      body { font-family: sans-serif; margin: 2rem; }
+      ul { list-style: none; padding: 0; }
+      li { margin: 0.5rem 0; }
+      button { margin-left: 1rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <form action="{{ url_for('add') }}" method="post">
+      <input type="text" name="title" placeholder="New todo…" required>
+      <button type="submit">Add</button>
+    </form>
+    <ul>
+      {% for todo in todos %}
+        <li>
+          {{ todo.title }}
+          <form action="{{ url_for('delete', todo_id=todo.id) }}" method="post" style="display:inline;">
+            <button type="submit">×</button>
+          </form>
+        </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
