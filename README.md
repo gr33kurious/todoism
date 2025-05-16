@@ -1,4 +1,4 @@
-# TodoApp
+# todoism
 
 A minimal Flask-based “todo list” web application demonstrating basic routing, templating, and in-memory data storage.
 
@@ -64,7 +64,3 @@ todoapp/
 1. **Persistent storage**: Replace the in-memory list with a database model (e.g. Flask-SQLAlchemy).  
 2. **User sessions**: Add user authentication to support multiple users.  
 3. **API**: Expose REST endpoints for client-side frameworks or mobile apps.  
-
----
-
-*This README was generated automatically.*  
