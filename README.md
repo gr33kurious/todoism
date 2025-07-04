@@ -61,6 +61,6 @@ todoapp/
 
 ## Extending
 
-1. **Persistent storage**: Replace the in-memory list with a database model (e.g. Flask-SQLAlchemy).  
+1. **Persistent storage**: Replace the in-memory list with a database model (Flask-SQLAlchemy).  
 2. **User sessions**: Add user authentication to support multiple users.  
 3. **API**: Expose REST endpoints for client-side frameworks or mobile apps.  
